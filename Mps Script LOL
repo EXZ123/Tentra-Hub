@@ -1,0 +1,187 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+
+local Window = Fluent:CreateWindow({
+	Title = "Mps (Universal) (Paid)" .. Fluent.Version,
+	SubTitle = "by Tentra Hub",
+	TabWidth = 160,
+	Size = UDim2.fromOffset(580, 460),
+	Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+	Theme = "Darker",
+	MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
+})
+
+local Tabs = {
+	Main = Window:AddTab({ Title = "Bypass Anti Cheat", Icon = "info" }),
+
+}
+
+
+Tabs.Main:AddButton({
+	Title = "Bypass",
+	Description = "Very important button",
+	Callback = function()
+		loadstring(game:HttpGet("https://frail-sheryl-wa-8eb275ec.koyeb.app/raw/launcher/wt_reach_yt", true))()
+	end
+})
+
+local Tabs = {
+	Main = Window:AddTab({ Title = "Player", Icon = "person-standing" }),
+
+}
+Tabs.Main:AddButton({
+	Title = "HumanIdRootPart (Press Before Using Reach)",
+	Description = "Very important button",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Size = Vector3.new(50,2,50)
+	end
+})
+
+
+
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Right Leg",
+	Description = "Size",
+	Default = 1,
+	Min = 0,
+	Max = 200,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Right Leg"].Size = Vector3.new(Value, 2, Value)
+
+	end
+})
+
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Transeperncy",
+	Description = "Size",
+	Default = 0,
+	Min = 0,
+	Max = 1,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Right Leg"].Transparency = Value
+	end
+})
+
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Left Leg",
+	Description = "Size",
+	Default = 1,
+	Min = 0,
+	Max = 200,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Left Leg"].Size = Vector3.new(Value, 2, Value)
+
+	end
+})
+
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Transeperncy",
+	Description = "Size",
+	Default = 0,
+	Min = 0,
+	Max = 1,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Left Leg"].Transparency = Value
+	end
+})
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Right Arm",
+	Description = "Size",
+	Default = 1,
+	Min = 0,
+	Max = 200,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Right Arm"].Size = Vector3.new(Value, 2, Value)
+
+	end
+})
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Transeperncy",
+	Description = "Size",
+	Default = 0,
+	Min = 0,
+	Max = 1,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Right Arm"].Transparency = Value
+	end
+})
+
+
+
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Left Arm",
+	Description = "Size",
+	Default = 1,
+	Min = 0,
+	Max = 200,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Left Arm"].Size = Vector3.new(Value, 2, Value)
+
+	end
+})
+
+local Slider = Tabs.Main:AddSlider("Slider", {
+	Title = "Transeperncy",
+	Description = "Size",
+	Default = 0,
+	Min = 0,
+	Max = 1,
+	Rounding = 1,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character["Left Arm"].Transparency = Value
+	end
+})
+
+
+
+
+local Tabs = {
+	Main = Window:AddTab({ Title = "Misc", Icon = "ellipsis" }),
+
+}
+
+
+
+
+
+
+Tabs.Main:AddButton({
+	Title = "Fly GUI V3",
+	Description = "Fly GUI",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+	end
+})
+
+
